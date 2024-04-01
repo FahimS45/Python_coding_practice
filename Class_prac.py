@@ -20,15 +20,14 @@ class CAT:
         print('New action has been updated')
 
 #============================================================================================
-        
-c1 = CAT("Jacky", "Brown", "dancing")
-c2 = CAT("Tom", "Navy blue", "jumping")
 
-c1.view()
-c2.view()
+no_of_cats = int(input("Enter the number of cats you want to see: "))
 
-c1.compare(c2)
-
-c2.set_action("dancing")
-
-c2.compare(c1)
+cats=[]
+for each in range(no_of_cats):
+    cat_ = f"Cat_{each + 1}"
+    cats.append(cat_)
+    cat_ = CAT(*input("Enter the name, color and action of your cat in order: ").split())
+    cat_.view()
+for every in cats:
+    print(f'Your objects: {every}')
