@@ -27,7 +27,7 @@ cats=[]
 for each in range(no_of_cats):
     cat_ = f"Cat_{each + 1}"
     cats.append(cat_)
-    cat_ = CAT(*input("Enter the name, color and action of your cat in order: ").split())
+    cat_ = CAT(*input("Enter the name, color and action of your cat in order with a space in between: ").split())
     cat_.view()
 for every in cats:
     print(f'Your objects: {every}')
